@@ -1,0 +1,176 @@
+/* Estilizando o fundo da página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Área dos ícones das redes sociais */
+.social-icons {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ff6600;
+}
+
+/* Container principal */
+.container {
+    max-width: 1100px;
+    width: 95%;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Título do Cardápio */
+.cardapio-titulo {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    transition: color 0.3s;
+    margin-bottom: 15px;
+}
+
+.cardapio-titulo:hover {
+    color: #ff6600;
+}
+
+/* Layout do conteúdo principal */
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Layout do cardápio dividido em duas colunas */
+.menu-container {
+    width: 65%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    background: #ff6600;
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 14px;
+    text-align: center;
+    gap: 4px; /* adiciona espaçamento pequeno entre os elementos internos */
+}
+
+.menu-img {
+    width: 80x;
+    height: 80px;
+    border-radius: 5px;
+    margin: 0; /* remove a margem inferior */
+}
+
+.menu-preco {
+    font-size: 12px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+/* Resumo do Pedido */
+.order-summary {
+    width: 30%;
+    padding: 20px;
+    background: #fff3e6;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.order-summary h2 {
+    color: #ff6600;
+    font-size: 20px;
+}
+
+.pedido-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.pedido-nome {
+    font-weight: bold;
+}
+
+.pedido-preco {
+    color: #ff6600;
+}
+
+#finalizarPedido {
+    background-color: #ff6600;
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+
+#finalizarPedido:hover {
+    background-color: #e65c00;
+}
+
+#limparPedido {
+  background-color:  #ff6600;
+  color: white;
+  font-size: 16px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 10px;
+}
+
+#limparPedido:hover {
+  background-color: #e65c00;
+}
+
+
+
+/* Rodapé */
+footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+}
